@@ -1,0 +1,9 @@
+include "Common.fbs";
+
+namespace hausy;
+
+table NodesRemove {
+  nodes : [Node];
+}
+
+root_type NodesRemove;

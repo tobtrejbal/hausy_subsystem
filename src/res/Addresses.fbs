@@ -1,0 +1,9 @@
+include "Common.fbs";
+
+namespace hausy;
+
+table Addresses {
+  nodes : [Node];
+}
+
+root_type Addresses;

@@ -1,0 +1,7 @@
+namespace hausy;
+
+table ConfigurationRequest {
+
+}
+
+root_type ConfigurationRequest;

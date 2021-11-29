@@ -1,0 +1,34 @@
+namespace hausy;
+
+enum AccessType : ubyte {
+  R,
+  W,
+  RW
+}
+
+enum Latency : ubyte {
+  NOW,
+  DELAYED
+}
+
+enum NodeType : ubyte {
+  WIRED,
+  WIRELESS
+}
+
+table Node {
+  localId : ushort;
+  typeId : ubyte;
+  nodeType : NodeType;
+  channelCount : ubyte;
+  macAddress : string;
+  random : ushort;
+}
+
+table Type {
+  localId : ubyte;
+  accessType : AccessType;
+  latency : Latency;
+  dataRange : ubyte;
+  dataCount : ubyte;
+}

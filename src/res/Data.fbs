@@ -1,0 +1,13 @@
+namespace hausy;
+
+table ChannelData {
+  data : [uint];  //Pole pro kazdy kanal
+  channelNumber : ubyte; //ID kanalu
+}
+
+table Data {
+  channelData : [ChannelData];
+  address : ushort;
+}
+
+root_type Data;

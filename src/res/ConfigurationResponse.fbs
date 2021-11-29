@@ -1,0 +1,10 @@
+include "Common.fbs";
+
+namespace hausy;
+
+table ConfigurationResponse {
+  nodes : [Node];
+  nodeTypes : [Type];
+}
+
+root_type ConfigurationResponse;

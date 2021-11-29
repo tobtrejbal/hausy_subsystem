@@ -1,0 +1,8 @@
+namespace hausy;
+
+table DiscoveryRequest {
+  scanWired : bool;
+  scanWireless : bool;
+}
+
+root_type DiscoveryRequest;

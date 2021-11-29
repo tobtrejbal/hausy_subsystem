@@ -1,0 +1,9 @@
+include "Common.fbs";
+
+namespace hausy;
+
+table TypesAdd {
+  nodeTypes : [Type];
+}
+
+root_type TypesAdd;

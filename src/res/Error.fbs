@@ -1,0 +1,19 @@
+namespace hausy;
+
+enum ErrorCode : byte {
+  ERROR_UART,
+  ERROR_COMMUNICATION,
+  ERROR_NODE_NOT_RESPONDING,
+  ERROR_PACKET_NONSENSE,
+  ERROR_NO_NEW_NODES,
+  ERROR_FAILED_TO_ADDRESS_NODE,
+  ERROR_JSON_NOT_VALID
+}
+
+table Error {
+  errorCode : ErrorCode;
+  nodeId : ushort; //optional, set when error code is node related and node localId is known
+  text : string;
+}
+
+root_type Error;

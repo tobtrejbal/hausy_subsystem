@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: org.json.jar guava-14.0-rc3.jar commons-lang-2.5.jar antlr
+ -runtime-3.3.jar sqlite-jdbc-3.14.2.1.jar jbool_expressions-1.8.jar o
+ rg.eclipse.paho.client.mqttv3-1.0.2.jar
+Main-Class: uhk.hausy.subsystem.core.HausyCore
+
